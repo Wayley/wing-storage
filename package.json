@@ -1,0 +1,40 @@
+{
+  "name": "wing-storage",
+  "version": "0.0.1",
+  "description": "web storage with expires and subscribe by original local-storage api",
+  "main": "dist/wing-storage.es.js",
+  "module": "dist/wing-storage.es.js",
+  "unpkg": "dist/wing-storage.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Wayley/wing-storage.git"
+  },
+  "keywords": [
+    "local-storage",
+    "storage",
+    "expires",
+    "subscribe"
+  ],
+  "author": {
+    "name": "Robben Wayley",
+    "email": "hb_wangzheng@163.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wayley/wing-storage/issues"
+  },
+  "homepage": "https://github.com/Wayley/wing-storage#readme",
+  "devDependencies": {
+    "rollup": "^2.26.5"
+  }
+}
