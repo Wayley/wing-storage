@@ -17,7 +17,7 @@ const removeLSLog = function (key) {
   if (lsLog && Object.prototype.hasOwnProperty.call(lsLog, key)) {
     delete lsLog[key];
     if (Object.keys(lsLog).length > 0) {
-      localStorage.setItem(KEY, lsLog);
+      localStorage.setItem(KEY, JSON.stringify(lsLog));
     } else {
       localStorage.removeItem(KEY);
     }
@@ -37,7 +37,7 @@ const initLS = function () {
         }
       }
       if (Object.keys(lsLog).length > 0) {
-        localStorage.setItem(KEY, lsLog);
+        localStorage.setItem(KEY, JSON.stringify(lsLog));
       } else {
         localStorage.removeItem(KEY);
       }
@@ -54,7 +54,7 @@ export const setItem = function (key, value, expires) {
     localStorage.setItem(key, value);
   }
   if (expires) {
-    setLSLog(key, expires);
+    setLSLog(key, new Date().getTime() + expires);
   }
 };
 export const removeItem = function (key) {
