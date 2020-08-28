@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/Wayley/wing-storage#readme",
   "devDependencies": {
-    "rollup": "^2.26.5"
+    "rollup": "^2.26.5",
+    "rollup-plugin-terser": "^7.0.0"
   }
 }
